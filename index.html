@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="container_h1">Guess the word</h1>
+    <p><strong>Hint:</strong> <span id="hint"></span></p>
+    <p id="wordDisplay" class="word-display"></p>
+
+    <form id="guessForm">
+      <label for="letterInput">Guess one letter: </label>
+      <input type="text" id="letterInput" maxlength="1" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p>Guessed Letters: <span id="guessedLetters"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
